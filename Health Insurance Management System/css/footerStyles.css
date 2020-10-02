@@ -1,0 +1,45 @@
+.footer {
+    background-color: #87ceeb;
+}
+
+.fLine {
+    border: 1px solid #808080;
+    width: 1200px;
+}
+.fText {
+    font-size: 14px;
+    color: #808080;
+}
+
+.fColumn {
+    float: left;
+    width: 24%;
+    padding: 0px;
+    height: 140px;
+    background-color: #87ceeb;
+    margin-left: 5px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.fTopic{
+    text-align:center;
+}
+
+.icons{
+    padding-top:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.fIcons {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.awards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
