@@ -20,10 +20,10 @@
 	<!-- Top Navigation bar -->
 	<div class="topnav">
 	
-	  <a class="active" href="#">Home</a>
-	  <a href="#">News & Events</a>
-	  <a href="#">Help & Support</a>
-	  <a href="#">About Us</a>
+	  <a class="active" href="Home.html">Home</a>
+	  <a href="News & Events.html">News & Events</a>
+	  <a href="Help & Support.html">Help & Support</a>
+	  <a href="About us.html">About Us</a>
 	
 	</div>
 	<!-- //Top Navigation bar -->
@@ -32,9 +32,9 @@
     <div class="bottomnav">
  
 	    <a href="familyplan.html">Health Plans</a>
-        <a href="#">Registration</a>
-        <a href="#">Payments</a>
-        <a class="active" href="#">My Account</a>
+        <a href="registration.html">Registration</a>
+        <a href="payment.html">Payments</a>
+        <a class="active" href="index.html">My Account</a>
     
 	
 	<form class="search-form">
@@ -47,8 +47,8 @@
 <body>
 <!--Breadcrumb-->
 	<ul class="breadcrumb">
-	<li><a href="#">My Account</a></li>
-	<li><a href="#">Login</a></li>
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="index.html">My Account</a></li>
 	<li><a href="#">Reset password</a></li>
 	</ul>
 	<!--//Breadcrumb-->
@@ -64,15 +64,15 @@
 			<a href="http://www.nawaloka.com/"><img  style="margin-bottom:200px;" src="../images/asirii.jpg" alt="ADDS" width="260" height="180"></a>
 		</div>
 		<div class="column"> 
-		<form method="POST" style="font-size:18px" onsubmit="checkPassword()">
+		<form method="POST" style="font-size:18px" action="reset.php" onsubmit="checkPassword()">
 		<br>
 		<br>
 			<label for="acn"><font color="white";>Account Number/Staff ID</label>
-			<input class="inp" type="text" id="acn" style="margin-left:18px" ><br>
+			<input class="inp" type="text" id="acn" name="acn" style="margin-left:18px" ><br>
 			<label for="npsw"><font color="white";>New Password</label>
-			<input class="inp" type="password" id="npsw" style="margin-left:97px"><br>
+			<input class="inp" type="password" id="npsw" name ="npsw"style="margin-left:97px"><br>
 			<label for="rnpsw"><font color="white";>Re-enter Password</label>
-			<input class="inp" type="password" id="rnpsw" style="margin-left:70px"><br>
+			<input class="inp" type="password" id="rnpsw" name="rnpsw" style="margin-left:70px"><br>
 			<button class="button" type="submit" >Reset</button><br>
 		</form>
 		</div>

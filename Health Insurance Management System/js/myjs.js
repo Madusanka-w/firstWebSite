@@ -9,27 +9,21 @@ function validate(){
 		return false;
 	}
 	
-	else if (accnum.value.length <10 || accnum.value.length > 10){
-		alert("Account number is not valid..!");
-		return false;
-	}
 	
 		
-	if (nicnum.value == "" ){
+	else if (nicnum.value == "" ){
 		alert("Please enter your NIC number..!");
 		return false;
 	}
 	
-	else if (nicnum.value.length <8 || nicnum.value.length > 8){
-		alert("Incorrect NIC number..!");
-		return false;
-	}
-	if (pswct.value == "" ){
+	
+	
+	else if (pswct.value == "" ){
 		alert("Please enter your password..!");
 		return false;
 	}
 	
-	else if (pswct.value.length <8 ){
+	else if (pswct.value.length <5 ){
 		alert("Password is not valid..!");
 		return false;
 	}
@@ -48,24 +42,20 @@ function validatestaff(){
 		alert("Please enter id number..!");
 		return false;
 	}
-	
-	else if (idnum.value.length <6 || idnum.value.length > 6){
-		alert("ID number is not valid.please enter your 6 correct ID number..!");
-		return false;
-	}
+
 	
 		
-	if (brnm.value == "" ){
-		alert("Please enter your branch name..!");
+	else if (brnm.value == "" ){
+		alert("Please enter your NIC..!");
 		return false;
 	}
 
-	if (pswct.value == "" ){
+	else if (pswct.value == "" ){
 		alert("Please enter your password..!");
 		return false;
 	}
 	
-	else if (pswct.value.length <8 ){
+	else if (pswct.value.length <5 ){
 		alert("Please enter your correct password..!");
 		return false;
 	}

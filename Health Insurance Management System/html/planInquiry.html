@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IWT Insurance</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/headerStyles.css">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/footerStyles.css">
+		<script type="text/javascript" src="../js/pageScript.js"></script>
+
+	</head>
+	<body>
+		<!-- LOGO -->
+		<div class="logo">
+			<img src="../images/IWTLOGO.png" width="180" height="176">
+		</div>
+
+		<!-- User avatar -->
+		<img src="../images/user.png" alt="Avatar" class="avatar">
+
+		<!-- Top Navigation bar -->
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="News & Events.html">News & Events</a>
+			<a href="Help & Support.html">Help & Support</a>
+			<a href="About us.html">About Us</a>
+
+		</div>
+
+		<!-- Bottom Navigation bar and search bar-->
+		<div class="bottomnav">
+			<a class="active" href="healthPlans.html">Health Plans</a>
+			<a href="registration.html">Registration</a>
+			<a href="payment.html">Payments</a>
+			<a href="index.html">My Account</a>
+
+			<div class="search-container">
+				<form class="search-form">
+					<input type="text" placeholder="Search here" name="search" style="margin-right:10px">
+					<button type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Breadrumbs -->
+		<ul class="breadcrumb">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="healthPlans.html">Health Plans</a></li>
+			<li><a href="personalPlans.html">Personal Plans</a></li>
+			<li><a href="planInquiry.html">Ask Us</a></li>
+		</ul>
+		<hr class="line">
+
+		<!--Ask us form and ads-->
+		
+		<div class="row">
+			<div class="InqFormColumn">
+				<form action="planQuerySubmit.php" target="_self" method="POST" onsubmit="submitted()">
+					<h1>Ask Us</h1>
+					<hr>
+					<br>
+
+					<label>Full Name *</label><br>
+					<input type="text" id="IFullName" name="IFullName" style="width:800px;" placeholder="Please enter your full name..." required><br><br><br>
+
+					<label>Mobile Number</label><br>
+					<input type="text" id="IMobile" name="IMobile" style="width:800px;" pattern="[0-9]{5,10}" placeholder="Please enter your contact no... eg: 07XXXXXXXXX" required><br><br><br>
+
+					<label>Email Address</label><br>
+					<input type="email" id="IEmailAd" name="IEmailAd" style="width:800px;" pattern="[a-zA-Z0-9.+-_&%]+@[a-z0-9]+\.[a-z]{2,3}" placeholder="Please enter your email... eg: example@gmail.com" required><br><br><br>
+
+
+					<label>Address</label><br>
+					<textarea id="IAddress" name="IAddress" rows="10" cols="50" placeholder="Please enter your address..."></textarea><br><br><br>
+
+					<label>Your Query</label><br>
+					<textarea id="IQuery" name="IQuery" rows="10" cols="98" placeholder="Please enter your query..."></textarea><br><br><br>
+
+					<label>Choose Plan Type</label><br>
+					<select id="IplanType" name="IplanType" style="width:800px;">
+						<option value="Annual Plan">Annual Plan</option>
+						<option value="Surgical Plan">Surgical Plan</option>
+						<option value="Covid Coverage">Covid Coverage</option>
+					</select>
+					<br>
+					<br>
+
+					<fieldset style="width: 200px">
+						<label>I'm not a robot</label>
+						<input type="checkbox" id="robot" name="robot" required onclick="enableCheckButton()">
+						<img src="../images/captcha.png" class="captcha">
+					</fieldset>
+					<br>
+					<br>
+
+					<input type="submit" id="askBtn" name="askBtn" value="Send" class="iButton" onclick="ask()" disabled>
+					<input type="reset" id="resetting" name="resetting" class="bttn">
+					<a href="forum.php">Go To The Question Forum</a>
+				</form>
+			</div>
+			<div class="InqAdColumn">
+				<h5><a href="mailto:email@IWTInsurance.com" class="adLink">Contact us to publish your advertisement here</a></h5>
+				<a href="https://www.durdans.com/"><img class="fIcons" src="../images/ad5.jpg" width="265" height="500"></a><br><br>
+				<a href="https://www.metropolitancollege.lk/"><img class="fIcons" src="../images/ad6.jpg" width="265" height="300"></a><br><br>
+
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<!--adding the footer-->
+		<div class="footer">
+			<hr>
+			<div class="row">
+				<div class="fColumn">
+					<h4 class="fTopic">Hot-Lines</h4><br>
+					<p><img class="fIcons" src="../images/phone.png" width="20" height="20">+94 011 1234567 / 4668 </p>
+					<br>
+					<p><a href="mailto:email@IWTInsurance.com" class="fLink"><img class="fIcons" src="../images/email.png" width="20" height="20">email@IWTInsurance.com</a></p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Follow Us On</h4><br>
+					<p>
+						<a href="https://www.facebook.com/"><img class="icons" src="../images/facebook.png" width="20" height="20"></a>
+						<a href="https://www.instagram.com/"><img class="icons" src="../images/instagram.png" width="20" height="20"></a>
+						<a href="https://twitter.com/?lang=en"><img class="icons" src="../images/twitter.png" width="20" height="20"></a>
+						<a href="https://www.google.com/"><img class="icons" src="../images/gPlus.png" width="20" height="20"></a>
+					</p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Head Office</h4><br>
+					<p><a href="https://www.google.lk/maps/place/SLIIT+Main+Building,+Malabe/@6.9148818,79.9709787,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae256db1043cc37:0x5f43c37d11c72aa!8m2!3d6.9148818!4d79.9731674" class="fLink"><img class="fIcons" src="../images/geoTag.png" width="20" height="20">No.21, New Kandy Road, Malabe.</a></p>
+				</div>
+				<div class="fColumn">
+					<img class="awards" src="../images/awards2.png" width="230" height="150">
+				</div>
+			</div>
+
+			<center>
+				<hr class="fLine">
+				<br>
+				<p class="fText">All rights reserved. IWT Insurance.</p>
+				<br>
+			</center>
+		</div>
+
+	</body>
+</html>

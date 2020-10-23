@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IWT Insurance</title>
+	<link rel="stylesheet" type="text/css" href="../css/stylesw1.css">
+	<link rel="stylesheet" type="text/css" href="../css/stylespay.css">
+	<link rel="stylesheet" type="text/css" href="../css/footerStyles.css">
+	<script src="../js/form.js"></script>
+	
+	<!-- LOGO -->
+	<div class="logo">
+	<img src="../images/IWTLOGO.png" width = "180" height = "180">
+	</div>
+	<!-- // LOGO -->
+
+	
+	<!-- Top Navigation bar -->
+	<div class="topnav">
+	
+	  <a class="active" href="#">Home</a>
+	  <a href="News & Events.html">News & Events</a>
+	  <a href="Help & Support.html">Help & Support</a>
+	  <a href="About us.html">About Us</a>
+	
+	</div>
+	<!-- //Top Navigation bar -->
+	
+	<!-- Bottom Navigation bar and search bar-->
+    <div class="bottomnav">
+ 
+	    <a href="healthPlans.html">Health Plans</a>
+        <a href="registration.html">Registration</a>
+        <a class="active" href="#">Payments</a>
+        <a href= "index.html">My Account</a>
+    
+	
+	<form class="search-form">
+              <input type="text" placeholder="Search here" name="search" style="margin-left:200px">
+			  <button type="search">Search</button>
+        </form> 
+	</div>
+	<!-- Bottom Navigation bar -->
+</head>
+<body>
+<br>
+	<ul class="breadcrumb">
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="#">Payments</a></li>
+	</ul>
+	
+<br>
+
+<!-- Payment Form -->
+<form action="paymentinsert.php" target="_blank" method="POST" onsubmit="">
+
+	<div class="payment"> 
+	
+	
+	<h2>Payment Details</h2>
+		
+			<div class="card space ">
+				<label class="label">Card holders name</label>
+				<input type="text" class="input" id="card_holdername" name="card_holdername"   placeholder="R.P.W.Perera" required>
+			</div>
+			
+			
+			<div class="card">
+				<label class="label">Card number:</label>
+				<input type="text" class="input" id="card_num" name="card_num"   placeholder="4256-8900-4800-5858" required>
+			</div>
+			
+			<br>
+			<br>
+			<div class="card">
+			<label class="label">Card type:</label>
+			</div>
+			
+			<center>
+			<div class="payment_method_wrapper">
+                                <input type="radio" name="payment_method" class="payment_method">
+                                <img src="../images/visa.png" width="48px" class="payment_method">
+                                <br>
+            </div>
+            
+			<div class="payment_method_wrapper">
+                                <input type="radio" name="payment_method" class="payment_method">
+                                <img src="../images/amex.png" width="48px" class="payment_method"><br>
+            
+			</div>
+                            
+			<div class="payment_method_wrapper" style="margin-top: 6px;">
+                                <input type="radio" name="payment_method" class="payment_method">
+                                <img src="../images/mastercard.png" width="48px" class="payment_method"> <br>
+
+            </div>
+			</center>
+			<br>
+			<br>
+			<div class="card-grp space">
+			
+				<div class = "card-item ">
+					<label class="label">Expiry Date:</label>
+					<input type="text" class="input" id="expiry_date" name="expiry_date" pattern="[0-9]{2}/[0-9]{2}" placeholder="00/00"required>
+				</div>
+				
+				<div class = "card-item">
+					<label class="label">CVV</label>
+					<input type="text" class="input" id="CVV" name="CVV" pattern="[0-9]{3}"  placeholder="000"required>
+				</div>
+				
+			</div>
+			
+			Confirm Payment
+			<input type="checkbox" id="cpay" name="cpay" onclick=" Validatecnum(); buttonactive();" ><br>
+			
+			<br>
+			<center>
+			<input type="submit" id="btn1" name="btn1" value="Pay" disabled>
+			</center>
+			
+	
+								
+	
+	</div>
+</div>
+</form>
+<center>
+<p class="p2"> <h4> <u><a href="paymentdisplay.php">Display inputted details<u> </a></h4></p>
+</center>
+<br/>
+<!--adding the footer-->
+		<div class="footer">
+			<hr>
+			<div class="row">
+				<div class="fColumn">
+					<h4 class="fTopic">Hot-Lines</h4><br>
+					<p><img class="fIcons" src="../images/phone.png" width="20" height="20">+94 011 1234567 / 4668 </p>
+					<br>
+					<p><a href="mailto:email@IWTInsurance.com"><img class="fIcons" src="../images/email.png" width="20" height="20">email@IWTInsurance.com</a></p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Follow Us On</h4><br>
+					<p>
+						<a href="https://www.facebook.com/"><img class="icons" src="../images/facebook.png" width="20" height="20"></a>
+						<a href="https://www.instagram.com/"><img class="icons" src="../images/instagram.png" width="20" height="20"></a>
+						<a href="https://twitter.com/?lang=en"><img class="icons" src="../images/twitter.png" width="20" height="20"></a>
+						<a href="https://www.google.com/"><img class="icons" src="../images/gPlus.png" width="20" height="20"></a>
+					</p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Head Office</h4><br>
+					<p><a href="https://www.google.lk/maps/place/SLIIT+Main+Building,+Malabe/@6.9148818,79.9709787,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae256db1043cc37:0x5f43c37d11c72aa!8m2!3d6.9148818!4d79.9731674"><img class="fIcons" src="../images/geoTag.png" width="20" height="20">No.21, New Kandy Road, Malabe.</a></p>
+				</div>
+				<div class="fColumn">
+					<img class="awards" src="../images/awards2.png" width="230" height="150">
+				</div>
+			</div>
+
+			<center>
+				<hr class="fLine">
+				<br>
+				<p class="fText">All rights reserved. IWT Insurance.</p>
+				<br>
+			</center>
+		</div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+.column {
+    float: left;
+    width: 31%;
+    padding: 10px;
+    height: 500px;
+    background-color: #dcdcdc;
+    margin-left: 5px;
+    margin-top: 30px;
+    border: 2px solid gray;
+    overflow: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+ul li {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+
+.topic {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0066ff;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    border: 1px solid #bfbfbf;
+}
+
+.regColumn {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: 1650px;
+    background-color: white;
+    margin-top: 30px;
+    border: 1px solid gray;
+}
+
+.selctionColumn {
+    float: left;
+    width: 35%;
+    padding: 10px;
+    height: 400px;
+    background-color: #001a4d;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid gray;
+    overflow:hidden;
+}
+
+.planSelect{
+    text-align:center;
+    font-size: 40px;
+}
+
+.link {
+    color: white;
+    display: block;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.adLink {
+    color: black;
+    display: block;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.form {
+    background-color: #b3ecff;
+    padding: 15px;
+    height:1620px;
+}
+
+form label {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bttn {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.policyColumn {
+    float: left;
+    width: 850px;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    overflow: auto;
+}
+
+input{
+    padding: 4px 8px;
+}
+
+.pad {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+a img:hover{
+    opacity: 0.8;
+}
+
+.captionColumn {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 230px;
+    background-color: lightcyan;
+    margin-top: 10px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+
+.captionTColumn {
+    float: left;
+    width: 40%;
+    padding-right: 0px;
+    height: 230px;
+    background-color: white;
+    margin-top: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.inquiryBtn {
+    width: 300px;
+    text-align: center;
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inquiryBtn:hover {
+    background-color: #b3ecff;
+}
+
+.InqFormColumn {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: 950px;
+    background-color: #eee;
+    margin-top: 10px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+
+.InqAdColumn {
+    float: left;
+    width: 20%;
+    padding-right: 0px;
+    height: 950px;
+    background-color: white;
+    margin-top: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.iButton {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+.captcha {
+    height: 30px;
+    width: 30px;
+    margin-left: 40px;
+}

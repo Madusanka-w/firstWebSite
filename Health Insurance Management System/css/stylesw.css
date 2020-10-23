@@ -1,0 +1,158 @@
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+  
+}
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+.uname{
+	
+	font-family:Candara;
+	text-align:left;
+	color:#EB2B3E;
+	font-size:25px;
+	font-weight:300; 
+	text-indent:30px;
+	position:absolute;
+	left:230px;
+	top:345px;
+}
+
+.logo1{
+	
+	position:absolute;
+	left:100px;
+}
+
+.addlogo{
+	
+	position:absolute;
+	left:1640px;
+	top:310px;
+	width:400px;
+}
+
+
+
+.p1{
+	
+	font-family:Courier New;
+	text-align:left;
+	color:blue;
+	font-size:20px;
+	font-weight:300;
+	text-indent:10px;
+	position:absolute;
+	left:90px;
+	top:420px;
+}
+
+.p2{
+	font-family:Courier New;
+	text-align:left;
+	color:blue;
+	font-size:20px;
+	font-weight:300;
+	text-indent:10px;
+	position:absolute;
+	left:688px;
+	top:690px;
+	
+}
+
+.usrname{
+
+font-family:"Lucida Console", Courier, monospace;	
+color:#105657;
+font-size:20px;
+position:absolute;
+right:20px;
+top:140px;
+}
+
+
+.hline{
+	 height:5px;
+	 border:none;
+	 border-radius:10px;
+	 background:linear-gradient(to left,#29D3D6,#427FED);
+	 width:78%
+	 
+}
+
+.Userd{
+	font-family:Candara;	
+	text-decoration:underline;
+	font-size:20px;
+	position:absolute;
+	top:480	px;
+	left:50px;
+}
+
+.detailsuser1{
+	font-family:Candara;
+    font-size:18px;	
+	position:absolute;
+	top:550px;
+	left:50px;
+}
+.detailsuser2{
+	font-family:Candara;
+    font-size:18px;	
+	position:absolute;
+	top:550px;
+	left:700px;
+}
+
+.entereddetails1{
+	
+	font-family:Candara;
+    font-size:18px;
+	background-color:silver;
+	position:absolute;
+	top:548px;
+	left:150px;
+	border-radius:10px;
+	text-align:center;
+	width:300px;
+	height:165px;
+}
+
+.entereddetails2{
+	
+	font-family:Candara;
+    font-size:18px;
+	background-color:silver;
+	position:absolute;
+	top:548px;
+	left:800px;
+	border-radius:10px;
+	text-align:center;
+	width:300px;
+	height:120px;
+}

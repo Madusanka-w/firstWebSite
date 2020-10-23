@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+  
+}
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+html, body{
+	
+	padding:0px;
+	margin:10px;
+	background:white;
+	font-family:'Lora' , serif; 
+}
+
+.logo {
+	
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+
+
+.avatar {
+  float: right;
+  margin-top:10px;
+  margin-right:0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.topnav {
+	overflow:hidden;
+	background-color:#e9e9e9;
+	margin-left:220px;
+	margin-right:470px;
+	border-radius:20px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #87ceeb;
+  color: white;
+}
+
+
+.bottomnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  margin-top:80px; 
+  margin-left:220px;
+  margin-right:200px;
+  border-radius:20px;
+  }
+
+.bottomnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.bottomnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.bottomnav a.active {
+  background-color: #87ceeb;
+  color: white;
+}
+
+
+.bottomnav .search-container {
+  float: right;
+}
+
+.bottomnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 15px;
+  border-radius:20px;
+  border: none;
+}
+
+
+.search-form button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right:12px;
+  background: #87ceeb;
+  color:white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position:relative;
+  border-radius:10px;
+
+}
+
+.search-form button:hover {
+  background: #ccc;
+}
+
+#line
+{
+  border : 2px solid black;
+}
+
+.sec1{
+	margin-left:0px;
+	padding:10px;
+	background-color:lightgrey;
+	width:300px;
+	float: left;
+
+}
+.sec2{
+	float: left;
+	padding:20px;
+	margin-left:50px;
+	background-color:lightgrey;
+	width:450px;
+
+}
+.sec3{
+	padding:10px;
+	background-color:lightgrey;
+	width:300px;
+	margin-left:900px;
+
+}
+
+.footer {
+    background-color: #87ceeb;
+}
+
+.fLine {
+    border: 1px solid #808080;
+    width: 1200px;
+}
+.fText {
+    font-size: 14px;
+    color: #808080;
+}
+
+.fColumn {
+    float: left;
+    width: 24%;
+    padding: 0px;
+    height: 140px;
+    background-color: #87ceeb;
+    margin-left: 5px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.fTopic{
+    text-align:center;
+}
+
+.icons{
+    padding-top:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.fIcons {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.awards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  .bottomnav .search-container {
+    float: none;
+  }
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IWT Insurance</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles1.css">
+	<script src="../js/javaScript1.js"></script> 
+	<!-- LOGO -->
+	<div class="logo">
+	<img src="../images/IWTLOGO.png" width = "180" height = "180">
+	</div>
+	<!-- // LOGO -->
+
+	<!-- User avatar -->
+	<img src="../images/user.png" alt="Avatar" class="avatar">
+	<!-- //User avatar -->
+	
+	<!-- Top Navigation bar -->
+	<div class="topnav">
+	
+	  <a href="Home.html">Home</a>
+	  <a href="News & Events.html">News & Events</a>
+	  <a class="active" href="#">Help & Support</a>
+	  <a href="About us.html">About Us</a>
+	
+	</div>
+	<!-- //Top Navigation bar -->
+	
+	<!-- Bottom Navigation bar and search bar-->
+    <div class="bottomnav">
+ 
+	<a href="healthPlans.html">Health Plans</a>
+        <a href="registration.html">Registration</a>
+        <a href="payment.html">Payments</a>
+        <a href="index.html">My Account</a>
+    
+	
+	<form class="search-form">
+             <input type="text" placeholder="Search here" name="search" style="margin-left:510px">
+			  <button type="search">Search</button>
+        </form> 
+	</div>
+	<!-- Bottom Navigation bar -->
+	
+<body>
+<br>
+	<ul class="breadcrumb">
+	<li><a href="Home.html">Home</a></li>
+	<li><a href="#">Help & Support</a></li>
+	</ul>
+	
+<br>
+
+<hr id = "line">
+	<script src="../js/javaScript1.js"></script> 
+	<div class="contactUs">
+		<h1><b><u> Contact Us </u></b></h1>
+	<div class="table1">
+	<table><br><br>
+	<tr><thead >
+		<th><h2><u>Head-Office:</u></h2></th>
+		<th><h2><u>Hotlines:</u></h2></th>
+		<th><h2><u>Social Links:</u></h2></th>
+	</thead></tr>
+	<tr>
+		<td>	<b><u>Address:</u></b><br><br>No:21,<br><br>New Kandy Road,<br><br>Malabe.<br>
+		</td>
+		<td>	<br><img src="../images/call.jpg" width = "40"style="margin-left:10px;">+94 11 1 234 566<br>
+			<br><img src="../images/call.jpg" width = "40"style="margin-left:10px;">+94 11 1 234 667<br>
+			<br><img src="../images/call.jpg" width = "40"style="margin-left:10px;">+94 11 1 234 688<br>
+			<br><img src="../images/call.jpg" width = "40"style="margin-left:10px;">+94 11 1 234 669	  
+		</td>
+		<td>	<br> <img src="../images/facebook.png"width = "30"style="margin-left:25px;"> <a href="https://www.facebook.com/">facebook.com/iwtInsurance</a><br> 
+			<br> <img src="../images/instagram.png"width = "30"style="margin-left:25px;"><a href="https://www.instagram.com/">instagram.com/iwtofficial</a><br> 
+			<br> <img src="../images/twitter.jpg"width = "30"style="margin-left:25px;"><a href="https://twitter.com/">twitter.com/iwtofficial</a><br><br>
+			<img src="../images/youtube.png"width = "30"style="margin-left:25px;"><a href="https://www.youtube.com/">youtube.com/iwtInsurance</a></td>  </td>
+	</tr>
+	<tr> 
+		<td> <h3> <u>Email:</u></h3><br><img src="../images/email.png" width = "40";"style="margin-top:10px;"> email@iwtInsurance.com</td>
+		<td> <h3 style="margin-left:15px;"><u>Fax:</u></h3>
+		<img src="../images/fax.jpg" width = "40"style="margin-left:10px;margin-top:10px;">+94 11 1 234 567
+		</td> 
+		
+	</tr>
+	<tr><td><br><h3 style="color:darkblue"> <u>Find your nearest branch</u></h3>
+		<form class="search-form" style="margin-top:15px;">
+              	<input type="text" placeholder="Enter Your town.." name="search">
+        	</form>
+		
+		</td></tr>
+		<tr><td><button onclick="button2()">Search</button></td></tr>
+	
+	</table></div>
+	</div>
+	<div class="inquiry">
+		<h1><b><u> Quick inquiry </u></b></h1>
+		<div class="container">
+  <form class="inquiry-form" method="POST" action="inquiryform.php" >
+	<br>
+
+    		<label for="fname">Full Name*</label> <br>
+    		<input type="text" id="fullname" name="fullname" placeholder="Your name.."style="width:400px;"><br><br>
+		<label for="cnum">Contact Number*</label><br>
+		<input type="text" id="contactNumber" name="contactNumber" placeholder="Your Contact Number.." ><br><br>
+		<label for="email">Email*</label><br>
+   	 	<input type="text"id="emailAddress" name="emailAddress" placeholder="Your Email Address.." ><br><br>
+		
+		<p>Type of Inquiry*:<p>
+		<select name="type">
+			<option selected>None</option>
+			<option>Product Inquiry</option>
+			<option>Information</option>
+			<option>Complaint</option>
+			<option>Other</option>
+		</select><br><br>
+
+   
+
+    		<label for="subject">Subject*</label><br>
+		<input type="text"id="subject" name="subject" placeholder="subject.."style="width:400px;"><br><br>
+		<label for="subject">Message*</label><br>
+    		<textarea id="message" name="message" placeholder="Write something.." style="width:500px; height:100px"></textarea><br><br>
+
+    		<button input type="submit" value="SEND" onclick="button1()">SEND</button> <br><br>
+		
+
+  </form>
+</div>
+	</div><br>
+<div class="footer">
+			<hr>
+			<div class="row">
+				<div class="fColumn">
+					<h4 class="fTopic">Hot-Lines</h4><br>
+					<p><img class="fIcons" src="../images/call.jpg" width="30" height="20">+94 011 1234567 / 4668 </p>
+					<br>
+					<p><a href="mailto:email@IWTInsurance.com"><img class="fIcons" src="../images/email.png" width="20" height="20">email@IWTInsurance.com</a></p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Follow Us On</h4><br>
+					<p>
+						<a href="https://www.facebook.com/"><img class="icons" src="../images/facebook.png" width="20" height="20"></a>
+						<a href="https://www.instagram.com/"><img class="icons" src="../images/instagram.png" width="20" height="20"></a>
+						<a href="https://twitter.com/?lang=en"><img class="icons" src="../images/twitter.png" width="20" height="20"></a>
+						<a href="https://www.google.com/"><img class="icons" src="../images/gPlus.png" width="20" height="20"></a>
+					</p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Head Office</h4><br>
+					<p><a href="https://www.google.lk/maps/place/SLIIT+Main+Building,+Malabe/@6.9148818,79.9709787,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae256db1043cc37:0x5f43c37d11c72aa!8m2!3d6.9148818!4d79.9731674"><img class="fIcons" src="images/geoTag.png" width="20" height="20">No.21, New Kandy Road, Malabe.</a></p>
+				</div>
+				<div class="fColumn">
+					<img class="awards" src="../images/awards2.png" width="230" height="150">
+				</div>
+			</div>
+
+			<center>
+				<hr class="fLine">
+				<br>
+				<p class="fText">All rights reserved. IWT Insurance.</p>
+				<br>
+			</center>
+		</div>
+</body>
+</html>

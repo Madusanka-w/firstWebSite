@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IWT Insurance</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/headerStyles.css">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/footerStyles.css">
+		<script type="text/javascript" src="../js/pageScript.js"></script>
+
+	</head>
+	<body>
+		<!-- LOGO -->
+		<div class="logo">
+			<img src="../images/IWTLOGO.png" width="180" height="176">
+		</div>
+
+		<!-- User avatar -->
+		<img src="../images/user.png" alt="Avatar" class="avatar">
+
+		<!-- Top Navigation bar -->
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="News & Events.html">News & Events</a>
+			<a href="Help & Support.html">Help & Support</a>
+			<a href="About us.html">About Us</a>
+
+		</div>
+
+		<!-- Bottom Navigation bar and search bar-->
+		<div class="bottomnav">
+			<a href="healthPlans.html">Health Plans</a>
+			<a class="active" href="registration.html">Registration</a>
+			<a href="payment.html">Payments</a>
+			<a href="index.html">My Account</a>
+
+			<div class="search-container">
+			<form class="search-form">
+				<input type="text" placeholder="Search here" name="search" style="margin-right:10px">
+				<button type="submit">Search</button>
+			</form>
+			</div>
+		</div>
+
+		<!-- Breadrumbs -->
+		<br/>
+		<ul class="breadcrumb">
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="#">Registraion</a></li>
+		</ul>
+
+		<!--adding the grids containing the form and ads-->
+		<hr class="line">
+		<div class="row">
+			<div class="regColumn">
+				<form action="registerFormSubmit.php" target="_self" method="POST" onsubmit="return checkPassword()" class="form">
+					<h2>Personal Information: </h2>
+					<br>
+
+					<label>Title *</label>
+					<select id="title" name="title" style="width:50px;" class="pad" required>
+						<option value="Mr.">Mr.</option>
+						<option value="Mrs.">Mrs.</option>
+						<option value="Miss">Miss</option>
+						<option value="Rev.">Rev.</option>
+					</select>
+					<label>First Name *</label>
+					<input type="text" id="fName" name="fName" style="width:300px;" placeholder="eg: John" required>
+					<label>Last Name *</label>
+					<input type="text" id="lName" name="lName" style="width:300px;" placeholder="eg: Smith" required>
+					<br>
+					<br>
+					<br>
+
+					<label>Gender</label>
+					<input type="radio" id="Gender" name="Gender" value="Male" checked> Male
+					<input type="radio" id="Gender" name="Gender" value="Female"> Female
+					<br>
+					<br>
+					<br>
+					
+					<label>NIC Number *</label>
+					<input type="text" id="idn" name="idn" style="width:300px;" placeholder="eg: XXXXXXXXXV" required>
+					<br>
+					<br>
+					<br>
+
+					<label>Date Of Birth</label>
+					<input type="date" id="dob" name="dob">
+					<br>
+					<br>
+					<br>
+					<hr>
+					<br>
+
+					<h2>Contact Information: </h2>
+					<br>
+
+					<label>Telephone 1 *</label>
+					<input type="text" id="FMobile" name="FMobile" style="width:300px;" pattern="[0-9]{5,10}" placeholder="eg: 0767693318" required>
+					<label>Telephone 2</label>
+					<input type="text" id="SMobile" name="SMobile" style="width:300px;" pattern="[0-9]{5,10}" placeholder="eg: 0767693318">
+					<br>
+					<br>
+					<br>
+
+					<label>Email Address *</label>
+					<input type="email" id="emailAd" name="emailAd" style="width:300px;" pattern="[a-zA-Z0-9.+-_&%]+@[a-z0-9]+\.[a-z]{2,3}" placeholder="eg: example@gmail.com" required>
+					<br>
+					<br>
+					<br>
+
+					<label>Address *</label><br>
+					<textarea id="address" name="address" rows="6" cols="70" placeholder="Enter your address" class="pad" required></textarea>
+					<br>
+					<br>
+					<br>
+
+					<label>Town/City *</label>
+					<input type="text" id="town" name="town" style="width:300px;" placeholder="Town/City" required>
+					<label>Postal Code *</label>
+					<input type="text" id="pCode" name="pCode" style="width:300px;" placeholder="Postal Code" required>
+					<br>
+					<br>
+					<br>
+					<hr>
+					<br>
+
+					<h2>Secondary Contact Information: </h2>
+					<br>
+
+					<label>Name * (with initials)</label>
+					<input type="text" id="scName" name="scName" style="width:300px;" placeholder="eg: CASmith" required>
+					<br>
+					<br>
+					<br>
+
+					<label>Secondary Contact Telephone *</label>
+					<input type="text" id="scMobile" name="scMobile" style="width:300px;" pattern="[0-9]{5,10}" placeholder="eg: 0767693318" required>
+					<br>
+					<br>
+					<br>
+					<hr>
+					<br>
+
+					<h2>Account Setup Information: </h2>
+					<br>
+
+					<label>Password *</label>
+					<input type="password" id="pwd" name="pwd" style="width:300px;" pattern="[a-zA-Z0-9]{5,10}" placeholder="Enter Password" required>
+					<label>Confirm Password *</label>
+					<input type="password" id="rpwd" name="rpwd" style="width:300px;" pattern="[a-zA-Z0-9]{5,10}" placeholder="Confirm Password" required>
+					<p class="fText">Password can contain minimum 5 and maximum 10 characters.</p>
+					<br>
+					<br>
+
+					<div class="row">
+						<div class="policyColumn">
+							<p>
+								<b>GENERAL TERMS AND CONDITIONS</b><br><br>
+								<b>SUPPLYING INFORMATION BEFORE THE CONCLUSION OF AN INSURANCE CONTRACT</b>
+								<br><br>
+								1.1 The Insurance Company’s duty of disclosureBefore the insurance contract is concluded, the Insurance Company supplies the insurance applicantwith the necessary information needed in order to assess insurance needs and choose the insurance.Such information includes, for example, information on the types of insurance provided by the Insurance Company as well as their premiums, terms and conditions and the essential restrictions to the insurance coverage.
+								<br><br>
+								1.2 Policyholder’s and Insured’s duty of disclosure1.
+								2.1 Personal and property & casualty insuranceBefore the insurance is granted, the Policyholder and the Insured must provide correct and complete answers to the questions asked by the Insurance Company in order to assess its liability.During the insurance period, the Policyholder and the Insured must also immediately correct any data given to the Insurance Company, in case they find it to be faulty or defective.
+								<br><br>
+								If the Policyholder or the Insuredhave proceeded in a deceitful manner when fulfilling the above duty of disclosure, the insurance contract is not binding on the Insurance Company.In this case, the Insurance Company has the right to retain the premiums received, even if the insurance expires.
+								<br><br>
+								1.2.2 Property & casualty insurance<br>
+								Compensation may be reduced or completely refused if the Policyholder or the Insured have neglected their duty of disclosure, either intentionally or through negligence which cannot be considered slight.
+								<br><br>
+								The compensation is reduced if, due to incorrect or inadequate information provided by the Policyholder or the Insured, the insurance premium is agreed at a lower level than would have been agreed if the correct and complete information had been given.
+								The compensation is reduced in proportion to the ratio of the agreed premium to the premium that would have been collected on the basis of the correct and complete information.However, a slight deviation in premiums does not justify any reductions in compensation.
+								<br><br>
+								1.2.3 Personal insurance<br>
+								If the Policyholder or the Insured has, intentionally or due to negligence that cannot be considered slight, neglected their duty of disclosure, and the Insurance Company, had the truthful and complete information been given, would not have granted the insurance, the Insurance Company is free from liability.If insurance had been granted only against a higher premium or on otherwise different conditions than agreed, the Insurance Company’s liability is limited to the amount corresponding to the agreed premium or to the conditions under which the insurance would have been granted.
+								<br><br>
+								<b>2 IF AGREEMENT AND OTHER CUSTOMER BENEFITS</b>
+								<br><br>
+								2.1 If AgreementIf Agreement is a benefit for If customers under which all insurances falling underthe scope of the agreement are collected. The Policyholder is entitled to pay the premiums in the agreed instalments specified in the Policy Document.
+								<br><br>
+								The If Agreement customer exercises decision-making power in issues relating to the If Agreement. If insurances of other persons have been attached to the If Agreement, said people can, if they so wish, transfer their insurance policies out of If Agreement.
+								<br><br>
+								2.2 Other customer benefits<br>
+								If can also offer its customers other benefits. The benefits and their prerequisites are determined in accordance with their specific rules. Changes in the benefits or the termination of the benefits do not affect the individual insurances.
+								<br><br>
+								2.3 Amending and calculating deductions and increases<br>
+								If individual premium discounts or increases have been agreed upon, the justification of and possible changes in them can be revised on the annual renewal date.
+								<br><br>
+								Deductions are calculated on the previous reduced price in the form of consecutive deductions.
+								<br><br>
+								2.4 Commencement of validity of the insurance contract<br>
+								2.4.1 General<br><br>
+								The insurance enters into force when either party has given or sent an acceptance of the other party’s offer, unless otherwise agreed.
+								<br><br>
+								The Insurance Company is liable for an insured event occurring after a written insurance application is delivered or sent, even if the application has not yet been dealt with, if it is obvious that the Company would have approved it.
+								<br><br>
+								In travel and licence insurances, a prerequisite for the commencement of the Insurance Company’s liability is the payment of premium, unless otherwise agreed with the Insurance Company.
+								<br><br>
+							</p>
+						</div>
+					</div>
+					<br>
+					<br>
+
+					<label>I have read and agree to the Terms and Conditions</label>
+					<input type="checkbox" id="policy" name="policy" required onclick="enableButton()">
+					<br>
+					<br>
+					<br>
+
+					<input type="submit" id="subBtn" name="subBtn" value="Register Now" class="bttn" disabled>
+					<input type="reset" id="resetting" name="resetting" class="bttn">
+
+				</form>
+			</div>
+			<div>
+				<h5><a href="mailto:email@IWTInsurance.com" class="adLink">Contact us to publish your advertisement here</a></h5>
+				<a href="https://www.asirihealth.com/asiri-group/our-locations/asiri-hospital-kandy"><img class="fIcons" src="../images/ad1.jpg" width="265" height="500"></a><br><br>
+				<a href="https://www.ceymed.lk/"><img class="fIcons" src="../images/ad2.png" width="265" height="300"></a><br><br>
+				<a href="http://www.knhkandy.com/"><img class="fIcons" src="../images/ad4.jpg" width="265" height="200"></a><br><br>
+				<a href="https://www.combank.lk/digitalbanking/"><img class="fIcons" src="../images/ad3.jpg" width="265" height="300"></a><br><br>
+
+			</div>
+		</div>
+		<br><br>
+
+		<!--adding the footer-->
+		<div class="footer">
+			<hr>
+			<div class="row">
+				<div class="fColumn">
+					<h4 class="fTopic">Hot-Lines</h4><br>
+					<p><img class="fIcons" src="../images/phone.png" width="20" height="20">+94 011 1234567 / 4668 </p>
+					<br>
+					<p class="fLink"><a href="mailto:email@IWTInsurance.com" class="fLink"><img class="fIcons" src="../images/email.png" width="20" height="20">email@IWTInsurance.com</a></p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Follow Us On</h4><br>
+					<p>
+						<a href="https://www.facebook.com/"><img class="icons" src="../images/facebook.png" width="20" height="20"></a>
+						<a href="https://www.instagram.com/"><img class="icons" src="../images/instagram.png" width="20" height="20"></a>
+						<a href="https://twitter.com/?lang=en"><img class="icons" src="../images/twitter.png" width="20" height="20"></a>
+						<a href="https://www.google.com/"><img class="icons" src="../images/gPlus.png" width="20" height="20"></a>
+					</p>
+				</div>
+				<div class="fColumn">
+					<h4 class="fTopic">Head Office</h4><br>
+					<p><a href="https://www.google.lk/maps/place/SLIIT+Main+Building,+Malabe/@6.9148818,79.9709787,17z/data=!3m1!4b1!4m5!3m4!1s0x3ae256db1043cc37:0x5f43c37d11c72aa!8m2!3d6.9148818!4d79.9731674" class="fLink"><img class="fIcons" src="../images/geoTag.png" width="20" height="20">No.21, New Kandy Road, Malabe.</a></p>
+				</div>
+				<div class="fColumn">
+					<img class="awards" src="../images/awards2.png" width="230" height="150">
+				</div>
+			</div>
+
+			<center>
+				<hr class="fLine">
+				<br>
+				<p class="fText">All rights reserved. IWT Insurance.</p>
+				<br>
+			</center>
+		</div>
+
+	</body>
+</html>
